@@ -3,7 +3,6 @@
 {-# LANGUAGE TypeFamilies #-}
 -- This is the main configuration file for Propellor, and is used to build
 -- the propellor program.
-module Main where
 
 import Propellor
 import Propellor.Types.MetaTypes
@@ -36,7 +35,7 @@ ppas ps = ps
 
 -- An example host.
 mybox :: Host
-mybox = host "desktop.kco.io" $ props
+mybox = host "kevin-desktop" $ props
   & osBuntish "wily" "amd64"
   & PPA.addPpa (PPA.PPA "hvr" "ghc")
   & PPA.addPpa (PPA.PPA "webupd8team" "sublime-text-3")
