@@ -35,7 +35,7 @@ ppas ps = ps
 
 -- An example host.
 mybox :: Host
-mybox = host "kevin-desktop" $ props
+mybox = host "127.0.0.1" $ props
   & osBuntish "wily" "amd64"
   & PPA.addPpa (PPA.PPA "hvr" "ghc")
   & PPA.addPpa (PPA.PPA "webupd8team" "sublime-text-3")
